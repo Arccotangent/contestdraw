@@ -17,6 +17,7 @@ along with ContestDraw.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "seed-hasher.h"
 #include <cstring>
+#include <openssl/sha.h>
 using namespace std;
 
 string SeedHasher::hashSeed(string seed, string salt) {
